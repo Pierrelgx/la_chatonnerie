@@ -1,26 +1,27 @@
-# README
+# 🐈‍⬛ Un deux trois, trois p'tits chats
 
-test bene
+## Installation
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
 
-* Ruby version
+```bash
+Bundle install
+```
+```bash
+rails s
+```
+```bash
+et enjoyyy 🔥😎
+```
 
-* System dependencies
+## Usage
 
-* Configuration
+Est-ce le prochain site révolutionnaire ? c'est évident... 
 
-* Database creation
 
-* Database initialization
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## License
+- [🙋🏻‍♀️ Bénédicte COULON](https://google.fr)
+- [🏋🏻‍♂️ Aurélien INGWEN](https://google.fr)
+- [⚽️ Niall BURDON](https://google.fr)
+- [🚴‍♂️ Pierre LEGOUX](https://google.fr)

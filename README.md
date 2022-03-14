@@ -1,7 +1,5 @@
 # 🐈‍⬛ Un deux trois, trois p'tits chats
 
-Miaouuuuuuuu'
-
 ## Installation
 
 

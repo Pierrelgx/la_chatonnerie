@@ -13,3 +13,7 @@
  *= require_tree .
  *= require_self
  */
+.square-box {
+    max-width: 600px;
+    min-height: 600px;
+}

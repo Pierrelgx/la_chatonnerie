@@ -1,0 +1,27 @@
+<div class="row justify-content-center p-5">
+  <div class="col-lg-4 col-md-6 ml-auto mr-auto shadow-lg p-3 mb-5 bg-body rounded border border-3">
+    <div class="card shadow-lg p-3 mb-5 bg-body rounded border border-3">
+        <div class="d-flex justify-content-between align-items-center ">
+            <div class="mt-2">
+                <h4 class="text-uppercase">
+                  <p>
+                    <%= @item.title %>
+                  </p>
+                  <p>
+                    <%= @item.description %>
+                  </p>
+                </h4>
+                <div class="mt-5">
+                    <h1 class="main-heading mt-0"><%= @item.price %> €</h1>
+                    <div class="d-flex flex-row user-ratings">
+                        <div class="ratings"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rounded mx-3"> <%= image_tag("cat.jpg", width:"200", :alt => "rss feed") %> </div>
+        </div>
+
+        <button class="btn btn-danger">Add to cart</button>
+    </div>
+</div>
+</div>

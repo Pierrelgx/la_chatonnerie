@@ -10,6 +10,6 @@ require 'faker'
         title: Faker::Creature::Cat.name, #=> "Shadow"
         description: Faker::Creature::Cat.breed, #=> "British Semipi-longhair"
         price: rand(1..99),
-        image_url: "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+        image_url: Faker::LoremPixel.image(size: "50x60", is_gray: false, category: 'cats')
     )
     end

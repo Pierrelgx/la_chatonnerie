@@ -1,8 +1,6 @@
-# 🐈‍⬛ Un deux trois, trois p'tits chats
+# 🐈‍⬛ Un deux trois, trois p'tits chats 🔥
 
 ## Installation
-
-test test test
 
 ```bash
 Bundle install

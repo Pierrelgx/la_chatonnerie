@@ -9,8 +9,7 @@ class StaticPagesController < ApplicationController
         @item = Item.find(params[:id])
     end
 
-    
-  
+
 
 
 end

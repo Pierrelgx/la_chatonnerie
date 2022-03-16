@@ -9,17 +9,19 @@
 
 
 
-    <main class="bg-dark py-5" style="background-image: url(https://maximumwallhd.com/wp-content/uploads/2017/04/wallpaper-image-chats-en-ete-11.jpg); background-size: 100%">
+
+
+    <main class="bg-dark py-5" style="background-image: url(https://maximumwallhd.com/wp-content/uploads/2017/04/wallpaper-image-chats-en-ete-11.jpg); background-size: 100%; background-position: center;">
     <div class="container px-5" >
         <div class="row gx-5 justify-content-center">
             <div class="col-lg-6"  >
                 <div class="text-center my-5"  >
-                    <h1 class="display-4 fw-bolder text-grey mb-2">La Chatonnerie 🐾 </h1>
-                    <p class="lead text-black-50 mb-4"><b>Le meilleur site en ligne pour obtenir les clichés de nos petits cats préférés 🥳</b></p>
-                    <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
-                        <a class="btn btn-outline-light btn-lg px-4" href="#!">Learn More</a>
+                   <br>
+                    
+                        <br><br><br><br><br><br><br>
                     </div>
                         <br>
+            <div> 
                         <br>
                         <br>
                         <br>
@@ -32,55 +34,42 @@
 
 
 </head>
-<body>
+<body><br><br><br>
+    <center>
+    <h1 class="display-4 fw-bolder text-grey mb-2">La Chatonnerie 🐾 </h1><br>
+    <p class="lead text-black-50 mb-4"><b>Le meilleur site en ligne pour obtenir les clichés de nos petits cats préférés 🥳</b></p>
+    </center>
 <br>
     
-<div class="album py-5 bg-light">
-    <div class="container">
 
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-        <div class="col">
-          <div class="card shadow-sm">
-          <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="exemple de texte alternatif"/>
 
-            <div class="card-body">
-              <p class="card-text">Picture 1</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-danger">Voir le détail</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-          <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="exemple de texte alternatif"/>
-            <div class="card-body">
-              <p class="card-text">Picture 2</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                <button type="button" class="btn btn-sm btn-outline-danger">Voir le détail</button>
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-          <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"/>
 
-            <div class="card-body">
-              <p class="card-text">Picture 3</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                <button type="button" class="btn btn-sm btn-outline-danger">Voir le détail</button>
-                </div>
-              </div>
+
+<% @items.each do |item| %>
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+        <div class="card card-small card-home">
+            <div class="thumbnail">           
+                    <a href="<%=item_path(item.id)%>">
+                        <div class="thumb-cover"></div>
+                    </a>            
+                             
             </div>
-          </div>
+            <div class="card-info">
+                <div class="moving">
+                        <a class="btn btn-warning active mt-2 mb-4" >Titre</a>
+                        <a class="btn btn-primary active mt-2 mb-4" href="<%=item_path(item.id)%>">Détails</a>
+                        <br>
+                </div>
+            </div>
         </div>
+    </div>
+    
+      <% end %>
+
+
+
+       
+        
 
 
 

@@ -1,6 +1,0 @@
-  <p class="card-title"><strong>Email: </strong> <%= @user.email %></p>
-
-  <% if current_user.id == @user.id %>
-    <%= link_to 'Edit Basic Info', edit_user_path(@user.id) %>  |
-    <%= link_to "Edit your password", edit_user_registration_path(@user.id) %>
-  <% end %>

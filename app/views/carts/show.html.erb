@@ -1,0 +1,46 @@
+<br/>
+<div class="container">
+    <h1>Mon panier</h1>
+    <br/>
+    <br/>
+        <div class="row">
+            <div class="col-lg-8 col-md-8">
+                <table class="table">
+                    <thead>
+                        <tr>
+                        <th scope="col">Quantité</th>
+                        <th scope="col">Nom de produit</th>
+                        <th scope="col">Prix unitaire</th>
+                        <th scope="col">Prix selon quantité</th>
+                        <th scope="col"></th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% total_price = [] %>
+                        <%  @items_in_cart.each do |item| %>
+                            <tr>
+                            <th scope="row"><%= item.quantity %></th>
+                            <td><%= item.item.title %></td>
+                            <td><%= item.item.price %>€</td>
+                            <td><%= total_item = item.item.price*item.quantity.to_d %>€</td>
+                            <% total_price << total_item %>
+                            </tr>
+                        <% end %>
+                         <tr>
+                            <th scope="row"></th>
+                            <td></td>
+                            <td></td></td>
+                            <td></td>
+                            </tr>
+                            <tr>
+                            <th scope="row"></th>
+                            <td></td>
+                            <td class="font-weight-bold">Prix total:</td>
+                            <td><%= total_price.inject(0){|sum,x| sum + x }%>€</td>
+                            </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+</div>

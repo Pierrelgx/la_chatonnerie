@@ -3,4 +3,8 @@ Rails.application.routes.draw do
 
   resources :items
 
+  root to: 'static_pages#index'
+
+  get 'static_pages/index', as: 'index_path'
+
 end

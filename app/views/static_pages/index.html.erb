@@ -11,7 +11,7 @@
 
 
 
-    <main class="bg-dark py-5" style="background-image: url(https://maximumwallhd.com/wp-content/uploads/2017/04/wallpaper-image-chats-en-ete-11.jpg); background-size: 100%; background-position: center;">
+    <main class="bg-white py-5" style="background-image: url(https://maximumwallhd.com/wp-content/uploads/2017/04/wallpaper-image-chats-en-ete-11.jpg); background-size: 100%; background-position: center; background-repeat: no-repeat;">
     <div class="container px-5" >
         <div class="row gx-5 justify-content-center">
             <div class="col-lg-6"  >
@@ -51,12 +51,11 @@
             <div class="thumbnail">           
                     <a href="<%=item_path(item.id)%>">
                         <div class="thumb-cover"></div>
-                    </a>            
-                             
+                    </a>                   
             </div>
             <div class="card-info">
                 <div class="moving">
-                        <a class="btn btn-warning active mt-2 mb-4" >Titre</a>
+                        <p><%= item.title %></p>
                         <a class="btn btn-primary active mt-2 mb-4" href="<%=item_path(item.id)%>">Détails</a>
                         <br>
                 </div>

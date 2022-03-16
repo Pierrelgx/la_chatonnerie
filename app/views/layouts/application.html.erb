@@ -39,14 +39,6 @@
                   <%= link_to "Se déconnecter", destroy_user_session_path, method: :delete, style: 'color:#FFFFFF;' %>
                 </li>
 
-
-
-
-
-                <li>
-                  <%= link_to "Modifier email / mot de passe", edit_user_registration_path, {:style=>'color:#FFFFFF;'}%>
-                </li>
-
               <% else %>
               <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
                 <li><a href="<%=new_user_session_path%>" class="btn btn me-2 text-white">Se connecter</a></li>

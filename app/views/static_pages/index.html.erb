@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Chatonnerie</title>
+
+
+
+
+
+
+    <main class="bg-white py-5" style="background-image: url(https://maximumwallhd.com/wp-content/uploads/2017/04/wallpaper-image-chats-en-ete-11.jpg); background-size: 100%; background-position: center; background-repeat: no-repeat;">
+    <div class="container px-5" >
+        <div class="row gx-5 justify-content-center">
+            <div class="col-lg-6"  >
+                <div class="text-center my-5"  >
+                   <br>
+                    
+                        <br><br><br><br><br><br><br>
+                    </div>
+                        <br>
+            <div> 
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                  </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+</head>
+<body><br><br><br>
+    <center>
+    <h1 class="display-4 fw-bolder text-grey mb-2">La Chatonnerie 🐾 </h1><br>
+    <p class="lead text-black-50 mb-4"><b>Le meilleur site en ligne pour obtenir les clichés de nos petits cats préférés 🥳</b></p>
+    </center>
+<br>
+    
+
+
+
+
+<% @items.each do |item| %>
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+        <div class="card card-small card-home">
+            <div class="thumbnail">           
+                    <a href="<%=item_path(item.id)%>">
+                        <div class="thumb-cover"></div>
+                    </a>                   
+            </div>
+            <div class="card-info">
+                <div class="moving">
+                        <p><%= item.title %></p>
+                        <a class="btn btn-primary active mt-2 mb-4" href="<%=item_path(item.id)%>">Détails</a>
+                        <br>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+      <% end %>
+
+
+
+       
+        
+
+
+
+</body>
+</html>

@@ -10,7 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 2022_03_15_101219) do
+=======
+ActiveRecord::Schema.define(version: 2022_03_14_120611) do
+>>>>>>> b2fd81e13647eda45defd48dc18519dae978a3ef
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -54,5 +58,8 @@ ActiveRecord::Schema.define(version: 2022_03_15_101219) do
 
   add_foreign_key "carts", "items"
   add_foreign_key "carts", "users"
+<<<<<<< HEAD
   add_foreign_key "orders", "users"
+=======
+>>>>>>> b2fd81e13647eda45defd48dc18519dae978a3ef
 end

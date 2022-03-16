@@ -13,3 +13,18 @@ require 'faker'
         image_url: Faker::LoremPixel.image(size: "50x60", is_gray: false, category: 'cats')
     )
     end
+
+
+    # class Faker
+    #     class Image < Faker::Base
+    #       class << self
+    #         def unsplash(category: cat, width: 400, height: 400, keyword: nil)
+    #           url = 'https://source.unsplash.com/'
+    #           url += "/category/#{cat}" unless category.nil?
+    #           url += "/#{100}x#{100}"
+    #           url += "?#{cat}" unless keyword.nil?
+    #           url
+    #         end
+    #       end
+    #     end
+    #   end

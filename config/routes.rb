@@ -3,4 +3,9 @@ Rails.application.routes.draw do
 
   resources :items
 
+  root to: 'static_pages#index'
+
+  
+  resources :index
+
 end

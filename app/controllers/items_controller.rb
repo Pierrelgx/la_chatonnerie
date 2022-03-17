@@ -8,6 +8,8 @@ class ItemsController < ApplicationController
 
     def show
       @item = Item.find(params[:id])
+      @join_table_item_cart = JoinTableItemsCart.new
+
     end
 
 

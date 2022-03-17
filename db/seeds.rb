@@ -5,14 +5,12 @@
 
 require 'faker'
 
-10.times do
-    item = Item.create!(
-        title: Faker::Creature::Cat.name, #=> "Shadow"
-        description: Faker::Creature::Cat.breed, #=> "British Semipi-longhair"
-        price: rand(1..99),
-        image_url: Faker::LoremPixel.image(size: "50x60", is_gray: false, category: 'cats')
-    )
-    end
+Item.create!(
+    title: Faker::Creature::Cat.name, #=> "Shadow"
+    description: Faker::Creature::Cat.breed, #=> "British Semipi-longhair"
+    price: rand(1..99),
+    image_url: "https://img.freepik.com/photos-gratuite/image-chat-mignon_1122-449.jpg?1&w=826&t=st=1647456805~exp=1647457405~hmac=8a369400832bd64a9c1e8cd4c945fc6c72104339780dca824e497d93ce0f6421"
+)
 
 
     # class Faker

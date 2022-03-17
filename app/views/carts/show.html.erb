@@ -13,8 +13,12 @@
                         <th scope="col">Prix unitaire</th>
                         <th scope="col">Prix selon quantité</th>
                         <th scope="col"></th>
+                        
 
                         </tr>
+
+                        
+
                     </thead>
                     <tbody>
                         <% total_price = [] %>
@@ -27,6 +31,8 @@
                             <% total_price << total_item %>
                             </tr>
                         <% end %>
+
+                        
                          <tr>
                             <th scope="row"></th>
                             <td></td>
@@ -44,3 +50,6 @@
             </div>
         </div>
 </div>
+<br>
+<center><button type="button" class="btn btn-primary">Passer la commande</button></center>
+<br>

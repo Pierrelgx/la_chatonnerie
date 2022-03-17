@@ -2,7 +2,9 @@
 
 ## Installation
 
+Tu peux directement te rendre sur le [site online](https://la-chatonnerie-main.herokuapp.com/) 
 
+Sinon, tu peux ouvrir ton terminal et faire :
 
 ```bash
 Bundle install
@@ -21,7 +23,7 @@ Est-ce le prochain site révolutionnaire ? c'est évident...
 
 
 ## License
-- [🙋🏻‍♀️ Bénédicte COULON](https://google.fr)
-- [🏋🏻‍♂️ Aurélien INGWEN](https://google.fr)
-- [⚽️ Niall BURDON](https://google.fr)
-- [🚴‍♂️ Pierre LEGOUX](https://google.fr)
+- [🙋🏻‍♀️ Bénédicte COULON](https://github.com/BenedicteCn)
+- [🏋🏻‍♂️ Aurélien INGWEN](https://github.com/Aurelien1997)
+- [⚽️ Niall BURDON](https://github.com/nburd01)
+- [🚴‍♂️ Pierre LEGOUX](https://github.com/Pierrelgx)
